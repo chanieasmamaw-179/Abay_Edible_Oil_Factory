@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABAY EDIBLE OIL FACTORY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            position: relative;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            height: 60vh;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header h1 {
+            color: #fff;
+            font-weight: bold;
+            margin: 0;
+            padding: 20px;
+            font-size: 2.5em;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        footer {
+            background: url('') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10%; /* Increased padding for more space */
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .advertising-footer {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .footer-slideshow-container {
+            display: flex;
+            width: 200%;
+            animation: footerSlide 30s infinite; /* Slowed down the animation speed to 30s */
+        }
+
+        @keyframes footerSlide {
+            0% {transform: translateX(0%);}
+            50% {transform: translateX(-50%);}
+            100% {transform: translateX(0%);}
+        }
+
+        .footer-ads {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .footer-ads img {
+            max-width: 100%;
+            height: 80px; /* Increased height for footer images */
+            margin: 0 10px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            height: 70%;
+            position: relative;
+            margin: auto;
+        }
+
+        .center-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Fade animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* Hidden content initially */
+        .hidden-content {
+            display: none;
+        }
+
+        .hidden-content:target {
+            display: block;
+        }
+
+        /* Footer text styling */
+        footer p {
+            color: black; /* Change text color to black */
+            font-weight: bold; /* Make text bold */
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="slideshow-container">
+            <div class="center-bg">
+                <div class="mySlides fade">
+                    <img src="home_page.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="product1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="product2.jpg" style="width:50%">
+
+                </div>
+                <div class="mySlides fade">
+                     <img src="petrolium.jpg" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Oil_tancker.jpg" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="row_inputs1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="ware_house.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="product3.jpg" style="width:40%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="site2.jpg" style="width:40%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Awrd2.jpg" style="width:30%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="gift.jpg" style="width:30%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Office.jpg" style="width:30%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="site1.jpg" style="width:30%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="site_tracker.jpg" style="width:30%">
+                    </div>
+                <div class="mySlides fade">
+                    <img src="site_tracker2.jpg" style="width:30%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Office_award.jpg" style="width:30%">
+
+
+                </div>
+            </div>
+        </div>
+        <h1>ABAY EDIBLE OIL FACTORY</h1>
+    </header>
+
+    <nav>
+        <a href="#home-content">Home</a>
+        <a href="#about-content">About</a>
+        <a href="#products-content">Products</a>
+        <a href="#services-content">Services</a>
+        <a href="#projects-content">Projects</a>
+        <a href="#contact-content">Contact</a>
+        <a href="#map-content">Map</a>
+        <a href="#vacancies-content">Vacancies and Events</a>
+        <a href="#sister-companies-content">Sister Companies</a>
+        <a href="#import-export-content">Import-Export</a>
+    </nav>
+
+    <div class="container">
+        <section id="home-content" class="hidden-content">
+            <h2>Home</h2>
+            <p><a href="#home-content">Welcome to Abay Edible Oils Factory</a></p>
+            <div id="home-details" class="content">
+                <p>Your Trusted Source for Premium Quality Edible Oils!</p>
+                <p>Abay Edible Oils Factory, we are dedicated to providing the finest quality edible oils that enhance the flavor and nutritional value of your meals. With decades of expertise in oil production, our state-of-the-art facility ensures that every drop of oil meets the highest standards of purity and freshness. The owner of the factory is <strong>Yeshambel Mengiste</strong>.</p>
+
+            </div>
+        </section>
+
+        <section id="about-content" class="hidden-content">
+            <h2>About</h2>
+            <p>Abay Edible Oils Factory, we are dedicated to providing the finest quality edible oils that enhance the flavor and nutritional value of your meals.</p>
+        </section>
+
+        <section id="products-content" class="hidden-content">
+            <h2>Products</h2>
+            <ul>
+                <li>Sunflower Oil: Light and versatile, perfect for frying and cooking.</li>
+                <li>Olive Oil: Rich in flavor and antioxidants, ideal for salads and Mediterranean dishes.</li>
+                <li>Canola Oil: A heart-healthy choice with a neutral taste for various culinary applications.</li>
+                <li>Palm Oil: High-quality, sustainable palm oil for diverse cooking needs.</li>
+            </ul>
+        </section>
+
+        <section id="services-content" class="hidden-content">
+            <h2>Services</h2>
+            <ul>
+                <li>Premium Quality: Our oils are extracted using advanced technologies that preserve their natural goodness and flavor.</li>
+                <li>Sustainability: We are committed to environmentally friendly practices and sustainable sourcing.</li>
+                <li>Certifications: Our products meet stringent quality standards and are certified for purity and safety.</li>
+            </ul>
+        </section>
+
+        <section id="projects-content" class="hidden-content">
+            <h2>Projects</h2>
+            <p>Visit our Blog for tips on cooking with our oils, the latest industry news, and healthy eating advice.</p>
+        </section>
+
+        <section id="contact-content" class="hidden-content">
+            <h2>Contact</h2>
+            <p>Have questions or need more information? Regarding our factory details, be work with use as agent or sister company, our team are ready to help you!. Contact us or follow us on [Social Media Links....]. or</p>
+            <ul>
+                <li><strong>Factory Owner</strong> :-<br/>Yeshambel Menegesha Liyih <br/>Email:-Yeshambel2005@gmail.com or <br/>  Tele:-+251911216626 <br/></li>
+                <br/>
+                <li><strong>Production Manager</strong>  :- <br/> Amare Mengesha Liyih : <br/>Email:-amaremengesha715@gmail.com or <br/>  Tele:-+251911508257<br/></li>
+                <br/>
+                 <li><strong>Quality Asurance Manager</strong>  :- <br/> Esubalew Menegesha Liyih : <br/>Email:-esubalewmengesha39@gmail.com or <br/>  Tele:- +251911504427<br/></li>
+                <br/>
+
+                 <li><strong>Labratory Manager</strong>  :- <br/> Mintwab Mekete : <br/>Email:-mintymekete@gmail.com or <br/>  Tele:- +251945111166<br/></li>
+                <br/>
+
+                <li><strong>Company Accountant</strong>  :- <br/>  Fidel Yeshambel : <br/>Email:-yfidel23@gmail.com or <br/>  Tele:- +251911087248<br/></li>
+                <br/>
+
+
+                <li><strong>Officer Accountant</strong>  :- <br/>  Samrawit Abreham : <br/>Email:-or <br/>  Tele:- +251911306904<br/></li>
+                <br/>
+                 <li><strong>Marketing Manager</strong>  :- <br/>  Mesirat Yeshambel : <br/>Email:- Mesratyeshambel@gmail.com or <br/>  Tele:- +251911307241<br/></li>
+                <br/>
+
+        </section>
+
+        <section id="map-content" class="hidden-content">
+                <h2>Map</h2>
+                <p>Abay Edible Oil Factory is certified by the Ethiopian Food and Drug Authority under <strong>Ref. No.14097/FoMCRE/2024</strong></strong></p>
+                <p>Address: Bahir Dar City, Kebele 13, along Bahir Dar – Addis Ababa Highway.</p>
+        <iframe
+                    src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11946.10631394771!2d37.349729!3d11.570304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDM0JzEzLjEiTiAzN8KwMjAnNTguNSJF!5e0!3m2!1sen!2s!4v1234567890123" alt="Abay Edible Oil Factor"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+        </section>
+
+
+        <section id="vacancies-content" class="hidden-content">
+            <h2>Vacancies and Events</h2>
+            <ul>
+                <li>Job openings</li>
+                <li>Upcoming events</li>
+            </ul>
+        </section>
+
+        <section id="sister-companies-content" class="hidden-content">
+            <h2>Sister Companies</h2>
+            <ul>
+                <li>Kelecha Beri General Building PLC</li>
+                <li>Abay Edible Oil Factory</li>
+                <li>Barrad Construction Machinery</li>
+            </ul>
+        </section>
+
+        <section id="import-export-content" class="hidden-content">
+            <h2>Import-Export</h2>
+            <h3>Petroleum:</h3>
+            <ul>
+                <li>Abisiniya Trade Name</li>
+                <li>Bahrdar Branch</li>
+                <li>Sekela Branch</li>
+                <li>Injibara Branch</li>
+                <li>Marawie Branch</li>
+                <li>Wereta Branch</li>
+                <li>Bahrdar Zuriya Wereda Branch</li>
+            </ul>
+            <h3>Export Items:</h3>
+            <ul>
+                <li>Sesame</li>
+                <li>Pulses</li>
+                <li>Niger Seeds</li>
+                <li>Groundnuts</li>
+                <li>Soymeal</li>
+                <li>Castor Seeds</li>
+                <li>Green Mung Beans</li>
+                <li>Soybeans</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="advertising-footer">
+            <div class="footer-slideshow-container">
+                <div class="footer-ads">
+                    <!-- Removed "Car Advertisement 1" and "Car Advertisement 2" -->
+                    <img src="machinery7.jpg" style="width:20%; height:100%;">
+                    <img src="machinery6.jpg" style="width:20%; height:100%;">
+                    <img src="machinery2.jpg" style="width:20%; height:100%;">
+                    <img src="machinery3.jpg" style="width:20%; height:100%;">
+                    <img src="machinery4.jpg" style="width:20%; height:100%;">
+                    <img src="tracker3.jpg" style="width:20%; height:100%;">
+
+                        <video controls>
+                            <source src="machinery_movies.mp4" type="video/mp4">
+                            <source src="machinery_movies.ogg" type="video/ogg">
+                            <!-- Your browser does not support the video tag. -->
+                        </video>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Abay Edible Oil Factory. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+
+</body>
+</html>

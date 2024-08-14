@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABAY EDIBLE OIL FACTORY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            position: relative;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            height: 60vh;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header h1 {
+            color: #fff;
+            font-weight: bold;
+            margin: 0;
+            padding: 20px;
+            font-size: 2.5em;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        footer {
+            background: url('') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10%; /* Increased padding for more space */
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .advertising-footer {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .footer-slideshow-container {
+            display: flex;
+            width: 200%;
+            animation: footerSlide 30s infinite; /* Slowed down the animation speed to 30s */
+        }
+
+        @keyframes footerSlide {
+            0% {transform: translateX(0%);}
+            50% {transform: translateX(-50%);}
+            100% {transform: translateX(0%);}
+        }
+
+        .footer-ads {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .footer-ads img {
+            max-width: 100%;
+            height: 80px; /* Increased height for footer images */
+            margin: 0 10px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            height: 70%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .center-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: headerSlide 15s infinite;
+        }
+
+        @keyframes headerSlide {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Fade animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* Hidden content initially */
+        .hidden-content {
+            display: none;
+        }
+
+        .hidden-content:target {
+            display: block;
+        }
+
+        /* Footer text styling */
+        footer p {
+            color: black; /* Change text color to black */
+            font-weight: bold; /* Make text bold */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Language selector styling */
+        .language-selector {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="language-selector">
+            <select id="language" onchange="translateContent()">
+                <option value="en">English</option>
+                <option value="am">Amharic</option>
+            </select>
+        </div>
+        <div class="slideshow-container">
+            <div class="center-bg">
+                <img src="image1.jpg" class="mySlides fade">
+                <img src="image2.jpg" class="mySlides fade">
+                <img src="image3.jpg" class="mySlides fade">
+            </div>
+        </div>
+        <h1 id="header-title">ABAY EDIBLE OIL FACTORY</h1>
+    </header>
+
+    <nav>
+        <a href="#home-content" data-en="Home" data-am="ቤት">Home</a>
+        <a href="#about-content" data-en="About" data-am="ስለእኛ">About</a>
+        <a href="#products-content" data-en="Products" data-am="ምርቶች">Products</a>
+        <a href="#services-content" data-en="Services" data-am="አገልግሎቶች">Services</a>
+        <a href="#projects-content" data-en="Projects" data-am="ፕሮጀክቶች">Projects</a>
+        <a href="#contact-content" data-en="Contact" data-am="እኛን ያግኙ">Contact</a>
+        <a href="#map-content" data-en="Map" data-am="ካርታ">Map</a>
+        <a href="#vacancies-content" data-en="Vacancies" data-am="ቦታዎች">Vacancies</a>
+        <a href="#sister-companies-content" data-en="Sister Companies" data-am="አብሮ የሚሰሩ ኩባንያዎች">Sister Companies</a>
+        <a href="#import-export-content" data-en="Import-Export" data-am="አስመጣና አስገባ">Import-Export</a>
+    </nav>
+
+    <div class="container">
+        <section id="home-content" class="hidden-content">
+            <h2 data-en="Home" data-am="ቤት">Home</h2>
+            <p><a href="#home-content" data-en="Welcome to Abay Edible Oils Factory" data-am="እንኳን ወደ አባይ ቀንድ ዘይት ፋብሪካ በሰላም መጡ">Welcome to Abay Edible Oils Factory</a></p>
+            <div id="home-details" class="content">
+                <p data-en="Your Trusted Source for Premium Quality Edible Oils!" data-am="ለምርጥ የጥራት ዘይቶች ታመኛ ምንጭዎ!">Your Trusted Source for Premium Quality Edible Oils!</p>
+                <p data-en="Abay Edible Oils Factory, we are dedicated to providing the finest quality edible oils that enhance the flavor and nutritional value of your meals. With decades of expertise in oil production, our state-of-the-art facility ensures that every drop of oil meets the highest standards of purity and freshness. The owner of the factory is Yeshambel Mengiste." data-am="አባይ ቀንድ ዘይት ፋብሪካ፣ በጥሩ ጥራት የምንዳበር ዘይት ለመጠንቀቅና ወቅታዊ እንቅስቃሴዎችን ለማበረታታት እንስራለን። ዘይታችንን በከፍተኛ ደረጃ ለማጠናቀቅ ከወቅታዊ ቴክኖሎጂ ጋር ይሰራል። የተቋሙ ባለቤት አበራቢ መንግስት ነው።">Abay Edible Oils Factory, we are dedicated to providing the finest quality edible oils that enhance the flavor and nutritional value of your meals...</p>
+            </div>
+        </section>
+
+        <!-- Other sections with similar translation setup -->
+    </div>
+
+    <footer>
+        <div class="advertising-footer">
+            <div class="footer-slideshow-container">
+                <div class="footer-ads">
+                    <!-- Footer images and videos -->
+                    <img src="footer-image1.jpg" alt="Ad 1">
+                    <img src="footer-image2.jpg" alt="Ad 2">
+                    <img src="footer-image3.jpg" alt="Ad 3">
+                </div>
+            </div>
+        </div>
+        <p id="footer-text" data-en="Thank you for visiting ABAY Edible Oils Factory" data-am="ወደ አባይ ቀንድ ዘይት ፋብሪካ እንኳን ደህና መጡ">Thank you for visiting ABAY Edible Oils Factory</p>
+    </footer>
+
+    <script>
+        function translateContent() {
+            var language = document.getElementById('language').value;
+            var elements = document.querySelectorAll('[data-en]');
+
+            elements.forEach(function(element) {
+                element.textContent = element.getAttribute('data-' + language);
+            });
+        }
+
+        // Slideshow for header
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("mySlides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+
+</body>
+</html>
